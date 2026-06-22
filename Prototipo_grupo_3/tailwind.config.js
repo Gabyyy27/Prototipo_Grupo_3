@@ -4,14 +4,15 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['Inter Tight', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        title: ['Alte Haas Grotesk', 'Inter Tight', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
         brand: {
-          primary: '#0052cc',
-          deep: '#003d9b',
-          secondary: '#00b8d9',
-          success: '#36b37e',
+          primary: '#1783e4',
+          deep: '#025ba4',
+          secondary: '#57cc99',
+          success: '#57cc99',
         },
       },
       boxShadow: {

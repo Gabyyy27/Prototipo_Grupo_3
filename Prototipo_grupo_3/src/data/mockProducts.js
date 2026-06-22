@@ -1,0 +1,38 @@
+export const mockProducts = [
+  {
+    id: 'brownie-chocolate',
+    name: 'Brownie de Chocolate',
+    price: 50,
+    cost: 25,
+    stock: 15,
+    category: 'Reposter\u00eda',
+    sold: 3,
+  },
+  {
+    id: 'batido-fresa',
+    name: 'Batido de Fresa',
+    price: 85,
+    cost: 40,
+    stock: 3,
+    category: 'Bebidas',
+    sold: 1,
+  },
+  {
+    id: 'croissant-mantequilla',
+    name: 'Croissant de Mantequilla',
+    price: 35,
+    cost: 18,
+    stock: 20,
+    category: 'Panader\u00eda',
+    sold: 0,
+  },
+  {
+    id: 'iced-latte-12oz',
+    name: 'Iced Latte 12oz',
+    price: 65,
+    cost: 30,
+    stock: 42,
+    category: 'Bebidas',
+    sold: 0,
+  },
+];

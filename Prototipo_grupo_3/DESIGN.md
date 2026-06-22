@@ -1,10 +1,10 @@
-# RegistroBot Identity Design Guidelines
+# Contfia Identity Design Guidelines
 
 Source: Stitch project `13965910987355224643`, "SmartLog: WhatsApp Business Tracker".
 
 ## Product Direction
 
-RegistroBot is a mobile-first business tracker for small business owners who manage sales, inventory, payments, and customer activity through WhatsApp. The interface should feel reliable enough for financial decisions and simple enough to use while multitasking.
+Contfia is a mobile-first business tracker for small business owners who manage sales, inventory, payments, and customer activity through WhatsApp. The interface should feel reliable enough for financial decisions and simple enough to use while multitasking.
 
 The visual style is high-utility minimalism with a corporate modern tone. Prioritize data clarity, fast scanning, obvious actions, and calm financial confidence over decorative layouts.
 
@@ -24,8 +24,8 @@ The visual style is high-utility minimalism with a corporate modern tone. Priori
 - Main Dashboard
 - Inventory List
 - Financial History
-- RegistroBot Business Management Flow
-- RegistroBot Screen Plan & PRD
+- Contfia Business Management Flow
+- Contfia Screen Plan & PRD
 
 ## Color Tokens
 
@@ -33,36 +33,36 @@ Use light mode as the default.
 
 ```css
 :root {
-  --color-background: #f8f9fb;
-  --color-surface: #f8f9fb;
+  --color-background: #edf3ed;
+  --color-surface: #edf3ed;
   --color-surface-lowest: #ffffff;
-  --color-surface-low: #f3f4f6;
-  --color-surface-container: #edeef0;
-  --color-surface-high: #e7e8ea;
-  --color-surface-highest: #e1e2e4;
-  --color-surface-variant: #e1e2e4;
-  --color-surface-dim: #d9dadc;
+  --color-surface-low: #f4f8f4;
+  --color-surface-container: #edf3ed;
+  --color-surface-high: #dfe9e1;
+  --color-surface-highest: #cfddd2;
+  --color-surface-variant: #cfddd2;
+  --color-surface-dim: #dfe9e1;
 
-  --color-primary: #003d9b;
-  --color-primary-action: #0052cc;
-  --color-primary-soft: #dae2ff;
-  --color-primary-soft-dim: #b2c5ff;
+  --color-primary: #025ba4;
+  --color-primary-action: #1783e4;
+  --color-primary-soft: #dcecff;
+  --color-primary-soft-dim: #b9dcff;
   --color-on-primary: #ffffff;
 
-  --color-secondary: #00687b;
-  --color-secondary-action: #00b8d9;
-  --color-secondary-container: #50dcff;
+  --color-secondary: #57cc99;
+  --color-secondary-action: #57cc99;
+  --color-secondary-container: #dff7ec;
 
-  --color-tertiary: #004e32;
-  --color-success: #36b37e;
-  --color-tertiary-container: #006844;
+  --color-tertiary: #2b8c65;
+  --color-success: #57cc99;
+  --color-tertiary-container: #2b8c65;
 
   --color-error: #ba1a1a;
   --color-error-container: #ffdad6;
   --color-on-error-container: #93000a;
 
-  --color-text: #191c1e;
-  --color-text-strong: #172b4d;
+  --color-text: #090d09;
+  --color-text-strong: #090d09;
   --color-text-muted: #434654;
   --color-outline: #737685;
   --color-outline-soft: #c3c6d6;
@@ -80,11 +80,13 @@ Use light mode as the default.
 
 ## Typography
 
-Font family: Inter.
+Title font: Alte Haas Grotesk.
+Body font: Inter Tight.
 
 ```css
 :root {
-  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-title: "Alte Haas Grotesk", "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter Tight", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --text-headline-lg-size: 32px;
   --text-headline-lg-line: 40px;
@@ -261,4 +263,3 @@ Use Lucide React icons. Recommended mappings:
 - Keep the prototype interactive: onboarding navigation, auth forms, OTP entry, WhatsApp linking, dashboard tabs, inventory edits, and transaction filtering should update state.
 - No backend is required.
 - Display all currency in Lempiras with `L` prefix.
-
