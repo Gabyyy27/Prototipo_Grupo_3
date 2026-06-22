@@ -33,7 +33,7 @@ export default function InventoryPage() {
       <header className="inventory-topbar">
         <Link to="/dashboard" aria-label="Volver al inicio"><ChevronLeft size={19} /></Link>
         <h1>Inventario</h1>
-        <span />
+        <Link className="inventory-add-button" to="/inventory/new" aria-label="Agregar producto"><Plus size={20} /></Link>
       </header>
 
       <div className="inventory-search">
@@ -63,10 +63,6 @@ export default function InventoryPage() {
           ))}
         </div>
       )}
-
-      <Link className="inventory-fab" to="/inventory/new" aria-label="Agregar producto">
-        <Plus size={25} />
-      </Link>
 
       {productToDelete && (
         <Modal

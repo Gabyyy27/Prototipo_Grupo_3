@@ -14,6 +14,8 @@ import ProductFormPage from '../pages/ProductFormPage.jsx';
 import FinancialHistoryPage from '../pages/FinancialHistoryPage.jsx';
 import ChatbotPage from '../pages/ChatbotPage.jsx';
 import ProfilePage from '../pages/ProfilePage.jsx';
+import ClientsPage from '../pages/ClientsPage.jsx';
+import BudgetsPage from '../pages/BudgetsPage.jsx';
 
 export function AppRouter() {
   return (
@@ -34,6 +36,8 @@ export function AppRouter() {
       <Route path="/history" element={<FinancialHistoryPage />} />
       <Route path="/chatbot" element={<ChatbotPage />} />
       <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/clients" element={<ClientsPage />} />
+      <Route path="/budgets" element={<BudgetsPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );

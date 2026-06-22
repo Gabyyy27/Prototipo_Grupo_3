@@ -1,0 +1,32 @@
+export const mockClients = [
+  {
+    id: 'client-cafe-central',
+    name: 'Cafe Central',
+    phone: '9999-1020',
+    email: 'pagos@cafecentral.hn',
+    pendingBalance: 850,
+    dueDate: '2026-06-23',
+    status: 'pending',
+    lastAction: '',
+  },
+  {
+    id: 'client-tienda-luna',
+    name: 'Tienda Luna',
+    phone: '9870-4412',
+    email: 'tiendaluna@email.com',
+    pendingBalance: 450,
+    dueDate: '2026-06-27',
+    status: 'pending',
+    lastAction: '',
+  },
+  {
+    id: 'client-maria-lopez',
+    name: 'Maria Lopez',
+    phone: '9988-7731',
+    email: '',
+    pendingBalance: 0,
+    dueDate: '',
+    status: 'paid',
+    lastAction: '',
+  },
+];
